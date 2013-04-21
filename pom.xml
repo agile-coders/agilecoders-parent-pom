@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.sonatype.oss</groupId>
+        <artifactId>oss-parent</artifactId>
+        <version>7</version>
+    </parent>
+
+    <groupId>de.agilecoders.maven</groupId>
+    <artifactId>maven-parent</artifactId>
+    <version>0.1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>maven-parent</name>
+
+    <description>parent pom for all AgileCoders projects</description>
+
+    <url>http://agile-coders.github.io/agilecoders-parent-pom</url>
+
+    <organization>
+        <name>AgileCoders</name>
+        <url>https://agile-coders.github.com/</url>
+    </organization>
+
+    <inceptionYear>2011</inceptionYear>
+
+    <modules>
+        <module>maven-parent-pom</module>
+        <module>maven-parent-config</module>
+    </modules>
+
+    <prerequisites>
+        <maven>3.0.4</maven>
+    </prerequisites>
+
+    <scm>
+        <connection>scm:git:git://github.com/agile-coders/agilecoders-parent-pom.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/agile-coders/agilecoders-parent-pom.git</developerConnection>
+        <url>https://github.com/agile-coders/agilecoders-parent-pom/</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/agile-coders/${project.artifactId}/issues</url>
+    </issueManagement>
+
+    <ciManagement>
+        <system>Jenkins</system>
+        <url>https://travis-ci.org/agile-coders/agilecoders-parent-pom</url>
+    </ciManagement>
+
+    <developers>
+        <developer>
+            <id>miha</id>
+            <name>Michael Haitz</name>
+            <email>michael.haitz@agilecoders.de</email>
+            <organization>AgileCoders</organization>
+            <organizationUrl>${project.url}</organizationUrl>
+            <url>http://github.com/l0rdn1kkon/</url>
+            <timezone>+1</timezone>
+            <roles>
+                <role>developer</role>
+                <role>project lead</role>
+            </roles>
+        </developer>
+    </developers>
+
+    <distributionManagement>
+        <site>
+            <id>github</id>
+            <name>maven-reports at github</name>
+            <url>https://github.com/agile-coders/agilecoders-parent-pom</url>
+        </site>
+        <snapshotRepository>
+            <id>sonatype-nexus-snapshots</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>sonatype-nexus-staging</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
+</project>
