@@ -410,7 +410,7 @@
         <dependency>
             <groupId>de.agilecoders.maven</groupId>
             <artifactId>maven-parent-config</artifactId>
-            <version>${project.version}</version>
+            <version>0.1.2-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
@@ -479,7 +479,7 @@
                         <dependency>
                             <groupId>de.agilecoders.maven</groupId>
                             <artifactId>maven-parent-config</artifactId>
-                            <version>${project.version}</version>
+                            <version>0.1.2-SNAPSHOT</version>
                         </dependency>
                     </dependencies>
                 </plugin>
@@ -670,7 +670,7 @@
                             <requireJavaVersion>
                                 <version>1.5</version>
                             </requireJavaVersion>
-                            <requireNoRepositories />
+                            <requireNoRepositories/>
                             <requireReleaseDeps>
                                 <onlyWhenRelease>true</onlyWhenRelease>
                                 <message>No Snapshots Allowed!</message>
@@ -689,7 +689,7 @@
                                 <regex>scm:git:ssh://git@github.com/.*$</regex>
                                 <regexMessage>"project.scm.developerConnection must start with scm:git:ssh://git@github.com/"</regexMessage>
                             </requireProperty>
-                            <DependencyConvergence />
+                            <DependencyConvergence/>
                         </rules>
                     </configuration>
                     <executions>
@@ -760,7 +760,7 @@
                         <dependency>
                             <groupId>de.agilecoders.maven</groupId>
                             <artifactId>maven-parent-config</artifactId>
-                            <version>${project.version}</version>
+                            <version>0.1.2-SNAPSHOT</version>
                         </dependency>
                     </dependencies>
                 </plugin>
@@ -857,7 +857,7 @@
                     <dependency>
                         <groupId>de.agilecoders.maven</groupId>
                         <artifactId>maven-parent-config</artifactId>
-                        <version>${project.version}</version>
+                        <version>0.1.2-SNAPSHOT</version>
                     </dependency>
                 </dependencies>
             </plugin>

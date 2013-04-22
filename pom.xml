@@ -45,6 +45,16 @@
         <maven-gpg-plugin.version>1.4</maven-gpg-plugin.version>
     </properties>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>de.agilecoders.maven</groupId>
+                <artifactId>maven-parent-config</artifactId>
+                <version>0.1.2-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
     <profiles>
         <profile>
             <id>release-sign-artifacts</id>
