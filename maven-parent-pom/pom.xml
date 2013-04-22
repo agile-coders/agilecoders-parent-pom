@@ -26,8 +26,6 @@
 
     <inceptionYear>2011</inceptionYear>
 
-
-
     <prerequisites>
         <maven>3.0.3</maven>
     </prerequisites>

@@ -14,6 +14,28 @@
     <packaging>pom</packaging>
     <name>maven-parent</name>
 
+    <description>parent pom for all AgileCoders projects</description>
+
+    <url>http://agile-coders.github.io/agilecoders-parent-pom</url>
+
+    <organization>
+        <name>AgileCoders</name>
+        <url>https://agile-coders.github.com/</url>
+    </organization>
+
+    <inceptionYear>2011</inceptionYear>
+
+    <prerequisites>
+        <maven>3.0.3</maven>
+    </prerequisites>
+
+    <scm>
+        <connection>scm:git:git://github.com/agile-coders/agilecoders-parent-pom.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/agile-coders/agilecoders-parent-pom.git</developerConnection>
+        <url>https://github.com/agile-coders/agilecoders-parent-pom/</url>
+        <tag>HEAD</tag>
+    </scm>
+
     <modules>
         <module>maven-parent-config</module>
         <module>maven-parent-pom</module>
