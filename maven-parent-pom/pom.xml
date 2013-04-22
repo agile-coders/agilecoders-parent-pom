@@ -410,6 +410,7 @@
         <dependency>
             <groupId>de.agilecoders.maven</groupId>
             <artifactId>maven-parent-config</artifactId>
+            <version>0.1.2-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
@@ -478,7 +479,7 @@
                         <dependency>
                             <groupId>de.agilecoders.maven</groupId>
                             <artifactId>maven-parent-config</artifactId>
-                            <version>${maven-parent-config.version}</version>
+                            <version>0.1.2-SNAPSHOT</version>
                         </dependency>
                     </dependencies>
                 </plugin>
@@ -759,7 +760,7 @@
                         <dependency>
                             <groupId>de.agilecoders.maven</groupId>
                             <artifactId>maven-parent-config</artifactId>
-                            <version>${maven-parent-config.version}</version>
+                            <version>0.1.2-SNAPSHOT</version>
                         </dependency>
                     </dependencies>
                 </plugin>
@@ -856,7 +857,7 @@
                     <dependency>
                         <groupId>de.agilecoders.maven</groupId>
                         <artifactId>maven-parent-config</artifactId>
-                        <version>${maven-parent-config.version}</version>
+                        <version>0.1.2-SNAPSHOT</version>
                     </dependency>
                 </dependencies>
             </plugin>
