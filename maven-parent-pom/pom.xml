@@ -86,6 +86,8 @@
 
 
     <properties>
+        <config.version>0.1.2</config.version>
+
         <!-- common build properties -->
         <netbeans.checkstyle.format>true</netbeans.checkstyle.format>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -409,7 +411,7 @@
         <dependency>
             <groupId>de.agilecoders.maven</groupId>
             <artifactId>maven-parent-config</artifactId>
-            <version>0.1.2</version>
+            <version>${config.version}</version>
         </dependency>
     </dependencies>
 
@@ -478,7 +480,7 @@
                         <dependency>
                             <groupId>de.agilecoders.maven</groupId>
                             <artifactId>maven-parent-config</artifactId>
-                            <version>0.1.2-SNAPSHOT</version>
+                            <version>${config.version}</version>
                         </dependency>
                     </dependencies>
                 </plugin>
@@ -759,7 +761,7 @@
                         <dependency>
                             <groupId>de.agilecoders.maven</groupId>
                             <artifactId>maven-parent-config</artifactId>
-                            <version>0.1.2-SNAPSHOT</version>
+                            <version>${config.version}</version>
                         </dependency>
                     </dependencies>
                 </plugin>
@@ -856,7 +858,7 @@
                     <dependency>
                         <groupId>de.agilecoders.maven</groupId>
                         <artifactId>maven-parent-config</artifactId>
-                        <version>0.1.2-SNAPSHOT</version>
+                        <version>${config.version}</version>
                     </dependency>
                 </dependencies>
             </plugin>
