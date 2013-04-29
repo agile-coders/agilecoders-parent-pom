@@ -10,7 +10,7 @@
 
     <groupId>de.agilecoders.maven</groupId>
     <artifactId>maven-parent</artifactId>
-    <version>0.1.2</version>
+    <version>0.1.2-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>maven-parent</name>
 
@@ -43,6 +43,7 @@
 
     <properties>
         <maven-gpg-plugin.version>1.4</maven-gpg-plugin.version>
+        <config.version>0.1.2</config.version>
     </properties>
 
     <dependencyManagement>
@@ -50,7 +51,7 @@
             <dependency>
                 <groupId>de.agilecoders.maven</groupId>
                 <artifactId>maven-parent-config</artifactId>
-                <version>0.1.2</version>
+                <version>${config.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
