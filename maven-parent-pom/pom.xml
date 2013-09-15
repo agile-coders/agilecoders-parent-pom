@@ -94,6 +94,13 @@
         <maven.java.target>1.7</maven.java.target>
         <scmpublish.content>target/staging</scmpublish.content>
 
+        <!-- Flags -->
+        <enforcer.disable>false</enforcer.disable>
+        <pmd.disable>false</pmd.disable>
+        <jacoco.disable>false</jacoco.disable>
+        <checkstyle.disable>false</checkstyle.disable>
+        <findbugs.disable>false</findbugs.disable>
+
         <!-- apache plugin versions and configurations, please sort alphabetically -->
         <maven-antrun-plugin.version>1.7</maven-antrun-plugin.version>
         <maven-assembly-plugin.version>2.4</maven-assembly-plugin.version>
@@ -651,6 +658,7 @@
                         </dependency>
                     </dependencies>
                     <configuration>
+                        <skip>${enforcer.disable}</skip>
                         <rules>
                             <banDuplicateClasses>
                                 <findAllDuplicates>true</findAllDuplicates>
@@ -722,6 +730,7 @@
                     <artifactId>findbugs-maven-plugin</artifactId>
                     <version>${findbugs-maven-plugin.version}</version>
                     <configuration>
+                        <skip>${findbugs.disable}</skip>
                         <excludeFilterFile>${findbugs-maven-plugin.excludeFilterFile}</excludeFilterFile>
                         <xmlOutput>true</xmlOutput>
                         <threshold>Low</threshold>
@@ -790,6 +799,7 @@
                     <artifactId>maven-pmd-plugin</artifactId>
                     <version>${maven-pmd-plugin.version}</version>
                     <configuration>
+                        <skip>${pmd.disable}</skip>
                         <linkXRef>true</linkXRef>
                         <sourceEncoding>${project.build.sourceEncoding}</sourceEncoding>
                         <minimumTokens>100</minimumTokens>
@@ -801,6 +811,9 @@
                     <artifactId>jacoco-maven-plugin</artifactId>
                     <version>${jacoco-maven-plugin.version}</version>
                     <inherited>true</inherited>
+                    <configuration>
+                        <skip>${jacoco.disable}</skip>
+                    </configuration>
                     <executions>
                         <execution>
                             <id>default-prepare-agent</id>
@@ -840,6 +853,7 @@
                 <artifactId>maven-checkstyle-plugin</artifactId>
                 <version>${maven-checkstyle-plugin.version}</version>
                 <configuration>
+                    <skip>${checkstyle.disable}</skip>
                     <enableRulesSummary>false</enableRulesSummary>
                     <configLocation>${maven-checkstyle-plugin.configLocation}</configLocation>
                     <suppressionsLocation>${maven-checkstyle-plugin.suppressionsLocation}</suppressionsLocation>
