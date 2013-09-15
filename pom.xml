@@ -56,14 +56,6 @@
         </dependencies>
     </dependencyManagement>
 
-    <dependencies>
-        <dependency>
-            <groupId>de.agilecoders.maven</groupId>
-            <artifactId>maven-parent-config</artifactId>
-            <version>${config.version}</version>
-        </dependency>
-    </dependencies>
-
     <profiles>
         <profile>
             <id>release-sign-artifacts</id>
