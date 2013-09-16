@@ -5,7 +5,7 @@
     <parent>
         <groupId>de.agilecoders.maven</groupId>
         <artifactId>maven-parent</artifactId>
-        <version>0.3.0-SNAPSHOT</version>
+        <version>0.3.0</version>
     </parent>
 
     <artifactId>maven-parent-pom</artifactId>
@@ -146,7 +146,7 @@
 
         <!-- non plugin versions, please sort alphabetically -->
         <antlr.version>3.5</antlr.version>
-        <config.version>0.3.0-SNAPSHOT</config.version>
+        <config.version>0.3.0</config.version>
         <doxia-module-markdown.version>1.3</doxia-module-markdown.version>
         <extra-enforcer-rules.version>1.0-alpha-4</extra-enforcer-rules.version>
         <guava.version>15.0</guava.version>
@@ -721,7 +721,7 @@
                             <requireJavaVersion>
                                 <version>1.5</version>
                             </requireJavaVersion>
-                            <requireNoRepositories/>
+                            <requireNoRepositories />
                             <requireReleaseDeps>
                                 <onlyWhenRelease>true</onlyWhenRelease>
                                 <message>No Snapshots Allowed!</message>
@@ -740,7 +740,7 @@
                                 <regex>scm:git:ssh://git@github.com/.*$</regex>
                                 <regexMessage>"project.scm.developerConnection must start with scm:git:ssh://git@github.com/"</regexMessage>
                             </requireProperty>
-                            <DependencyConvergence/>
+                            <DependencyConvergence />
                         </rules>
                     </configuration>
                     <executions>
