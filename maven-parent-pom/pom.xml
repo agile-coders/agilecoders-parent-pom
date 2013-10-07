@@ -5,7 +5,7 @@
     <parent>
         <groupId>de.agilecoders.maven</groupId>
         <artifactId>maven-parent</artifactId>
-        <version>0.3.3-SNAPSHOT</version>
+        <version>0.3.3</version>
     </parent>
 
     <artifactId>maven-parent-pom</artifactId>
@@ -722,7 +722,7 @@
                             <requireJavaVersion>
                                 <version>1.5</version>
                             </requireJavaVersion>
-                            <requireNoRepositories/>
+                            <requireNoRepositories />
                             <requireReleaseDeps>
                                 <onlyWhenRelease>true</onlyWhenRelease>
                                 <message>No Snapshots Allowed!</message>
@@ -741,7 +741,7 @@
                                 <regex>scm:git:ssh://git@github.com/.*$</regex>
                                 <regexMessage>"project.scm.developerConnection must start with scm:git:ssh://git@github.com/"</regexMessage>
                             </requireProperty>
-                            <DependencyConvergence/>
+                            <DependencyConvergence />
                         </rules>
                     </configuration>
                     <executions>
