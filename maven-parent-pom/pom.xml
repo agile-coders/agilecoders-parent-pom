@@ -722,7 +722,7 @@
                             <requireJavaVersion>
                                 <version>1.5</version>
                             </requireJavaVersion>
-                            <requireNoRepositories />
+                            <requireNoRepositories/>
                             <requireReleaseDeps>
                                 <onlyWhenRelease>true</onlyWhenRelease>
                                 <message>No Snapshots Allowed!</message>
@@ -741,7 +741,7 @@
                                 <regex>scm:git:ssh://git@github.com/.*$</regex>
                                 <regexMessage>"project.scm.developerConnection must start with scm:git:ssh://git@github.com/"</regexMessage>
                             </requireProperty>
-                            <DependencyConvergence />
+                            <DependencyConvergence/>
                         </rules>
                     </configuration>
                     <executions>
@@ -1152,7 +1152,7 @@
                             </execution>
                         </executions>
                     </plugin>
-                    <plugin>
+                    <!--<plugin>
                         <groupId>org.jacoco</groupId>
                         <artifactId>jacoco-maven-plugin</artifactId>
                         <executions>
@@ -1173,7 +1173,7 @@
                                 </configuration>
                             </execution>
                         </executions>
-                    </plugin>
+                    </plugin>-->
                 </plugins>
             </build>
         </profile>
